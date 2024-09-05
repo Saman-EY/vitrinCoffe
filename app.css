@@ -3,6 +3,7 @@
   --secondary-color: #926c15;
   --third-color: #685019;
   --fourth-color: #fbca20;
+  --fifth-color: #f3ede7;
   --text-color: #1d1d1b;
   --white-color: #ffffff;
   --black-color: #000000;
@@ -221,6 +222,11 @@ a:hover {
   width: 120px;
   border-radius: 10px;
   position: relative;
+  transition: all ease 0.2s;
+}
+
+.SecondSecTabsContainer > button:hover {
+  background-color: var(--fourth-color);
 }
 
 .SecondSecTabsContainer > button:nth-child(2)::before {
@@ -268,6 +274,10 @@ a:hover {
   border-radius: 10px;
   padding: 7px 20px 7px 20px;
   width: 100%;
+  transition: all ease 0.2s;
+}
+.SecondSecCardContainer .MiniCard > button:hover {
+  background-color: var(--secondary-color);
 }
 
 .DiscountIcon {
@@ -300,13 +310,89 @@ a:hover {
 .MiniCardDescription > section > div > p {
   font-size: 14px;
   font-weight: 400;
-  
 }
 
-.SecondSecPaginateContainer > div:nth-child(1){
+.SecondSecPaginateContainer > div:nth-child(1) {
   /* background-color: red; */
 }
-.SecondSecPaginateContainer > div:nth-child(2){
+
+.SecondSecPaginateContainer > div:nth-child(2) {
   /* background-color: blue; */
   margin-right: 7rem;
+}
+
+.ThirdSecContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ThirdSecSecondBackdrop {
+  background-color: var(--fifth-color);
+  width: 100%;
+  height: 615px;
+  border-radius: 0px 307.5px 19px 0px;
+  background-image: url("./assets/imgandIcons/Mask-group.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 4.5rem;
+  position: relative;
+}
+
+.ThirdSecSecondBackdrop > div:first-child {
+  width: 615px;
+}
+.ThirdSecSecondBackdrop > div:first-child > h4 {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 55px;
+}
+
+.ThirdSecSecondBackdrop > div:first-child > p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 36px;
+}
+
+.ThirdSecSecondBackdrop > section:last-child {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  padding: 25px 55px;
+  position: absolute;
+
+  width: 780px;
+  bottom: -80px;
+  right: 35px;
+}
+
+.ThirdSecSecondBackdrop > section:last-child > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.ThirdSecSecondBackdrop > section:last-child > div > img {
+  width: 62px;
+  height: 54px;
+}
+
+.ThirdSecSecondBackdrop > section:last-child > div > span:nth-child(2) {
+  color: var(--white-color);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.ThirdSecSecondBackdrop > section:last-child > div > span:nth-child(3) {
+  color: var(--fifth-color);
+  font-size: 16px;
+  font-weight: 400;
 }
