@@ -71,9 +71,83 @@ input {
   margin: 0;
 }
 
+.mobileHeader {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  inset: 0;
+  width: 100%;
+  height: 80px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  z-index: 60;
+}
+.mobileHeader > button {
+  width: 26px;
+  height: 26px;
+  color: var(--white-color);
+}
+.mobileHeader > button > * {
+  width: 26px;
+  height: 26px;
+  color: var(--white-color);
+}
+.mobileHeader > img {
+  width: 100px;
+  height: 100px;
+}
+
+.offcanvasOverlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000008c;
+  z-index: 90;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+}
+
+.MobileOffcanvas {
+  position: fixed;
+  inset: 0;
+  right: -300px;
+  width: 260px;
+  height: 100%;
+  background-color: var(--fifth-color);
+  z-index: 95;
+  transition: right 0.3s ease;
+}
+
+.offcanvasOverlay.show,
+.MobileOffcanvas.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.MobileOffcanvas.show {
+  right: 0;
+}
+
+.MobileOffcanvas > button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+}
+
+.MobileOffcanvas > ul > li {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
 .mainHeader {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1580px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -145,11 +219,12 @@ input {
 
 .Banner {
   background-image: url("./assets/imgandIcons/mainBanner.svg");
-  height: 900px;
-  width: 100%;
+  /* background-color: red; */
+  height: 1150px;
+  /* width: 1200px; */
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: center top;
   padding-top: 3rem;
   margin: 0 auto;
 }
@@ -190,18 +265,18 @@ input {
 }
 
 .bannerOptionsSecContainer {
-  max-width: 1602px;
+  max-width: 1802px;
   margin: 0 auto;
   padding-right: 239px;
-  padding-top: 70px;
+  padding-top: 160px;
 }
 
 .bannerOptionsSec {
   display: flex;
-  width: 353px;
 }
 .bannerOptionsSec > section {
   border-radius: 10px;
+  width: 370px;
 }
 
 .bannerOptionsSecText > h3 {
@@ -348,11 +423,15 @@ input {
 }
 
 .SecondSecCardContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr)) !important;
+  justify-content: center;
+  align-items: center;
   gap: 45px;
 }
 
-.SecondSecCardContainer .MiniCard, .CardsListContainer .MiniCard {
+.SecondSecCardContainer .MiniCard,
+.CardsListContainer .MiniCard {
   width: 330px;
   border-radius: 16px;
   border: 0.5px solid var(--primary-color);
@@ -363,7 +442,8 @@ input {
   padding: 10px;
 }
 
-.SecondSecCardContainer .MiniCard > button, .CardsListContainer .MiniCard > button {
+.SecondSecCardContainer .MiniCard > button,
+.CardsListContainer .MiniCard > button {
   background-color: var(--primary-color);
   color: var(--fourth-color);
   border-radius: 10px;
@@ -373,7 +453,8 @@ input {
   width: 100%;
   transition: all ease 0.2s;
 }
-.SecondSecCardContainer .MiniCard > button:hover, .CardsListContainer .MiniCard > button:hover {
+.SecondSecCardContainer .MiniCard > button:hover,
+.CardsListContainer .MiniCard > button:hover {
   background-color: var(--secondary-color);
 }
 
@@ -443,7 +524,8 @@ input {
 }
 
 .ThirdSecSecondBackdrop > div:first-child {
-  width: 615px;
+  width: 100%;
+  max-width: 615px;
 }
 .ThirdSecSecondBackdrop > div:first-child > h4 {
   color: var(--primary-color);
@@ -467,7 +549,8 @@ input {
   border-radius: 20px;
   padding: 25px 55px;
   position: absolute;
-  width: 780px;
+  width: 100%;
+  max-width: 780px;
   bottom: -80px;
   right: 35px;
 }
@@ -536,6 +619,7 @@ input {
 
 .ForhSecContainer {
   /* background-color: red; */
+  width: 100%;
   max-width: 1300px;
   margin: 10rem auto 0;
   display: flex;
@@ -714,12 +798,14 @@ footer .footerSvg1 {
   padding: 6px 10px;
   width: 110px;
   color: var(--white-color);
-  
+  position: relative;
+}
+.ListFiltersContainer > button > ul {
+  cursor: default;
 }
 .ListFiltersContainer > button > span {
   font-weight: 400;
   font-size: 1rem;
-  
 }
 .ListFiltersContainer > button > .OptionGBadge {
   background-color: var(--fourth-color);
@@ -730,11 +816,10 @@ footer .footerSvg1 {
   border-radius: 50%;
   width: 23px;
   height: 23px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-right: auto;
   margin-left: 5px;
 }
-
 
 .CardsListContainer {
   display: grid;
@@ -743,4 +828,30 @@ footer .footerSvg1 {
   max-width: 1080px;
   margin: 0 auto;
   gap: 45px;
+}
+
+.ListFilterDropDown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  width: 225px;
+  /* padding: 6px 10px; */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  z-index: 10;
+  border-radius: 12px;
+  box-shadow: 5px 4px 13.3px 0px #0000005e;
+  overflow: hidden;
+}
+
+.ListFilterDropDown > li {
+  text-align: start;
+  padding: 0.4rem;
+  /* padding-bottom: 10px; */
+  /* padding-right: 10px; */
+}
+.ListFilterDropDown > li:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
 }

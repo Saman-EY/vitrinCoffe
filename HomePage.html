@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./responsive.css" />
     <title>Vitrin Coffe</title>
   </head>
 
@@ -42,6 +43,21 @@
           /></a>
           <a href="#"><img src="./assets/imgandIcons/user.svg" alt="icon" /></a>
         </div>
+      </section>
+
+      <section class="mobileHeader">
+        <button id="OpenMobileOffcanvas">
+          <svg
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </button>
+        <img src="./assets/imgandIcons/VitrincoffeWhite.svg" alt="icon" />
       </section>
 
       <section class="bannerOptionsSecContainer">
@@ -245,7 +261,7 @@
         </section>
 
         <div
-          class="SecondSecPaginateContainer d-flex align-items-center justify-content-between mt-5"
+          class="SecondSecPaginateContainer d-flex align-items-center justify-content-between mt-5 px-3"
         >
           <div class="opacity-0">.</div>
 
@@ -299,7 +315,7 @@
               <img src="./assets/imgandIcons/dotted-line.svg" alt="svg" />
             </h4>
 
-            <p>
+            <p class="px-2">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
               استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
               در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
@@ -343,7 +359,7 @@
       </section>
 
       <div class="HomeCoffeBoardTextContainer">
-        <div class="HomeCoffeBoardText">
+        <div class="HomeCoffeBoardText mx-5">
           <h4 class="mb-3">
             میدونی کش بک هم داریم ؟
             <img src="./assets/imgandIcons/dotted-line.svg" alt="svg" />
@@ -375,7 +391,11 @@
             <h4 class="mb-2">چرا ویترین کافه ؟</h4>
             <p>کیفیت و احترام در ارائه خدمات ارزش ماست</p>
           </div>
-          <img src="./assets/imgandIcons/benefits.svg" alt="svg" />
+          <img
+            class="w-100 px-3"
+            src="./assets/imgandIcons/benefits.svg"
+            alt="svg"
+          />
         </section>
       </section>
       <!-- FORTH SEC END -->
@@ -387,8 +407,10 @@
           <p>کافه یا رستورانتو به تخفیف کافه اضافه کن</p>
         </div>
 
-        <form class="d-flex flex-column gap-5" action="">
-          <div class="d-flex gap-4 align-items-center justify-content-center">
+        <form class="d-flex flex-column gap-3 gap-md-5" action="">
+          <div
+            class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center"
+          >
             <input type="text" placeholder="اسم شما :" />
             <input type="text" placeholder="شماره تماس :" />
             <input type="text" placeholder="آدرس :" />
@@ -505,8 +527,36 @@
     </footer>
     <!-- FOOTER END -->
 
+    <!-- MOBILE OFFCANVAS NAV BEGIN -->
+    <div class="offcanvasOverlay"></div>
+    <section class="MobileOffcanvas">
+      <button id="closeMobileOffcanvas">
+        <svg fill="#62412b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+          />
+        </svg>
+      </button>
+      <ul class="p-3 mt-3">
+        <li>
+          <a href="/HomePage.html">صفحه اصلی</a>
+        </li>
+        <li>
+          <a href="/CoffeRestaurant.html">کافه رستوران ها</a>
+        </li>
+        <li>
+          <a href="#">تماس با ما</a>
+        </li>
+        <li>
+          <a href="#">درباره ما</a>
+        </li>
+      </ul>
+    </section>
+    <!-- MOBILE OFFCANVAS NAV END -->
+
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/bootstrap.esm.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
