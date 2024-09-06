@@ -231,13 +231,18 @@ input {
 
 .Banner2 {
   background-image: url("./assets/imgandIcons/backgroundimage2.png");
-  height: 570px;
+  height: 770px;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: center top;
   padding-top: 3rem;
   margin: 0 auto;
+}
+
+.Banner2 > .mainHeader {
+  max-width: 1720px;
+  margin-top: 1rem;
 }
 
 .Banner2 > .mainHeader > section > ul > li > a:hover {
@@ -245,13 +250,13 @@ input {
 }
 
 .Banner2 .BannerContent {
-  /* background-color: red; */
   color: var(--white-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-top: 3rem;
 }
 
 .Banner2 .BannerContent > div:nth-of-type(1) > h4 {
@@ -791,7 +796,7 @@ footer .footerSvg1 {
 .ListFiltersContainer > button {
   background-color: var(--primary-color);
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   gap: 5px;
   border-radius: 12px;
@@ -810,7 +815,7 @@ footer .footerSvg1 {
 .ListFiltersContainer > button > .OptionGBadge {
   background-color: var(--fourth-color);
   color: var(--white-color);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -836,7 +841,7 @@ footer .footerSvg1 {
   right: 0;
   width: 225px;
   /* padding: 6px 10px; */
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: var(--white-color);
   color: var(--primary-color);
@@ -849,9 +854,48 @@ footer .footerSvg1 {
 .ListFilterDropDown > li {
   text-align: start;
   padding: 0.4rem;
-  /* padding-bottom: 10px; */
-  /* padding-right: 10px; */
 }
+.ListFilterDropDown > li:hover {
+  color: var(--fourth-color);
+}
+.ListFilterDropDown > li > label {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.ListFilterDropDown > li > label > span.active {
+  color: var(--fourth-color);
+}
+.ListFilterDropDown > li > label > input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.ListFilterDropDown > li > label > .checkImg,
+.ListFilterDropDown > li > label > .uncheckImg {
+  width: 20px;
+  height: 20px;
+}
+
+.ListFilterDropDown > li > label > .checkImg {
+  display: none;
+}
+
+/* .ListFilterDropDown > li > label > .uncheckImg {
+  display: inline;
+} */
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 .ListFilterDropDown > li:not(:last-child) {
   border-bottom: 1px solid #e0e0e0;
 }

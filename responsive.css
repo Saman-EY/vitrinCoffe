@@ -72,10 +72,9 @@
   }
 }
 @media (max-width: 800px) {
-
-    body {
-        overflow-x: hidden;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
   .bannerOptionsSecContainer {
     padding-right: 0;
@@ -131,6 +130,18 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+  }
+
+  .Banner2 .BannerContent {
+    margin-top: 10rem;
+  }
+
+  .CardsListContainer {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+
+  .CardsListContainer > .MiniCard {
+    margin: 0 auto;
   }
 }
 

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./responsive.css" />
     <title>Vitrin Coffe</title>
   </head>
 
@@ -46,7 +47,23 @@
         </div>
       </section>
 
-      <section class="BannerContent mt-5">
+      <section class="mobileHeader">
+        <button id="OpenMobileOffcanvas">
+          <svg
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </button>
+        <img src="./assets/imgandIcons/VitrincoffeWhite.svg" alt="icon" />
+      </section>
+      z
+
+      <section class="BannerContent">
         <div class="text-center">
           <h4>آخر هفته کجا دوست داری بری ؟</h4>
           <p>بهترین هارو براتون در نظر گرفتیم</p>
@@ -72,14 +89,16 @@
       </section>
     </section>
     <!-- HEADER END -->
-    <main>
+
+    <!-- MAIN BEGIN-->
+    <main class="mb-5">
       <!-- CardListSection BEGIN -->
       <section>
         <!-- LIST FILTERS BEGIN -->
         <section class="ListFiltersContainer">
-          <button>
+          <button class="dropdownButton">
             <span>هزینه</span>
-            <span class="OptionGBadge">2</span>
+            <span class="OptionGBadge"></span>
             <img
               class="OptionGIcon"
               src="./assets/imgandIcons/arrow-down.svg"
@@ -88,57 +107,141 @@
 
             <ul class="ListFilterDropDown">
               <li>
-                <span> همه </span>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">همه</span>
+                </label>
               </li>
               <li>
-                <span> همه </span>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">دارای آفر</span>
+                </label>
               </li>
               <li>
-                <span> همه </span>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">اقتصادی</span>
+                </label>
               </li>
               <li>
-                <span> همه </span>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">شگفت انگیز</span>
+                </label>
               </li>
               <li>
-                <span> همه </span>
-              </li>
-              <li>
-                <span> همه </span>
+                <label>
+                  <img
+                    class="checkImg"
+                    src="./assets/imgandIcons/checked.svg"
+                    alt="checked icon"
+                  />
+                  <img
+                    class="uncheckImg"
+                    src="./assets/imgandIcons/uncheck.svg"
+                    alt="unchecked icon"
+                  />
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span class="CheckboxSpan">لاکچری</span>
+                </label>
               </li>
             </ul>
           </button>
-          <button>
+
+          <button class="dropdownButton">
             <span>شهر</span>
-            <span class="OptionGBadge opacity-0"></span>
+            <span class="OptionGBadge"></span>
             <img
               class="OptionGIcon"
               src="./assets/imgandIcons/arrow-down.svg"
               alt="icon"
             />
-          </button>
-          <button>
-            <span>امکانات</span>
-            <span class="OptionGBadge opacity-0">2</span>
-            <img
-              class="OptionGIcon"
-              src="./assets/imgandIcons/arrow-down.svg"
-              alt="icon"
-            />
-          </button>
-          <button>
-            <span>ترتیب</span>
-            <span class="OptionGBadge opacity-0">2</span>
-            <img
-              class="OptionGIcon"
-              src="./assets/imgandIcons/arrow-down.svg"
-              alt="icon"
-            />
+
+            <ul class="ListFilterDropDown">
+              <li>
+                <label>
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span>شهر</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span>شهر</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span>شهر</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span>شهر</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span>شهر</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" class="filterCheckbox" />
+                  <span>شهر</span>
+                </label>
+              </li>
+            </ul>
           </button>
         </section>
         <!-- LIST FILTERS END -->
 
         <!-- LIST BEGIN -->
-        <section class="CardsListContainer">
+        <section class="CardsListContainer px-3">
           <div class="MiniCard">
             <!-- DISCOUNT ICON -->
             <img
@@ -177,7 +280,7 @@
             </div>
 
             <!-- CARD BTN -->
-            <div class="mt-3">مشاهده و رزرو</div>
+            <button class="mt-3">مشاهده و رزرو</button>
           </div>
           <div class="MiniCard">
             <!-- DISCOUNT ICON -->
@@ -217,7 +320,7 @@
             </div>
 
             <!-- CARD BTN -->
-            <div class="mt-3">مشاهده و رزرو</div>
+            <button class="mt-3">مشاهده و رزرو</button>
           </div>
           <div class="MiniCard">
             <!-- DISCOUNT ICON -->
@@ -730,8 +833,40 @@
     </footer>
     <!-- FOOTER END -->
 
+    <!-- MOBILE OFFCANVAS NAV BEGIN -->
+    <div class="offcanvasOverlay"></div>
+    <section class="MobileOffcanvas">
+      <button id="closeMobileOffcanvas">
+        <svg
+          fill="#62412b"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+          />
+        </svg>
+      </button>
+      <ul class="p-3 mt-3">
+        <li>
+          <a href="/HomePage.html">صفحه اصلی</a>
+        </li>
+        <li>
+          <a href="/CoffeRestaurant.html">کافه رستوران ها</a>
+        </li>
+        <li>
+          <a href="#">تماس با ما</a>
+        </li>
+        <li>
+          <a href="#">درباره ما</a>
+        </li>
+      </ul>
+    </section>
+    <!-- MOBILE OFFCANVAS NAV END -->
+
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/bootstrap.esm.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
