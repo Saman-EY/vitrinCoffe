@@ -16,6 +16,19 @@
     max-width: 400px;
   }
 }
+@media (max-width: 480px) {
+  .ListFiltersContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ListFiltersContainer > button {
+    margin: 0 auto;
+  }
+
+  .VitrinTeamSec > div:nth-of-type(2) {
+    gap: 2rem;
+  }
+}
 @media (max-width: 590px) {
   .ThirdSecSecondBackdrop > section {
     display: none !important;
@@ -100,6 +113,18 @@
   .ForhSecContainer > section:first-child > img {
     max-width: 400px;
   }
+
+  .Banner3 .BannerContent_aboutus {
+    margin: auto;
+    margin-top: 8rem;
+  }
+}
+@media (max-width: 860px) {
+  .VitrinTeamSec > div:nth-of-type(2) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (max-width: 1150px) {
   .mainHeader {
@@ -153,8 +178,7 @@
     display: flex;
   }
 }
-@media (max-width: 1350px) {
-}
+
 @media (max-width: 1450px) {
   .Banner {
     background-repeat: no-repeat;

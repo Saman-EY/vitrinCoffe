@@ -1,13 +1,14 @@
 :root {
-  --primary-color: #62412b;
+  --white-color: #ffffff;
+  --fifth-color: #f3ede7;
+  --fourth-color: #fbca20;
   --secondary-color: #926c15;
   --third-color: #685019;
-  --fourth-color: #fbca20;
-  --fifth-color: #f3ede7;
-  --text-color: #1d1d1b;
-  --white-color: #ffffff;
-  --black-color: #000000;
+  --primary-color: #62412b;
+  --sixth-color: #563926;
   --gray-color: #292d32;
+  --text-color: #1d1d1b;
+  --black-color: #000000;
 }
 
 @font-face {
@@ -173,6 +174,9 @@ input {
   color: var(--fourth-color);
   position: relative;
 }
+.mainHeader > section > ul > li.active2 > a {
+  color: var(--fourth-color);
+}
 .mainHeader > section > ul > li.active::after {
   content: "";
   position: absolute;
@@ -217,9 +221,10 @@ input {
   background-color: var(--white-color);
 }
 
-.Banner {
+.Banner,
+.Banner2,
+.Banner3 {
   background-image: url("./assets/imgandIcons/mainBanner.svg");
-  /* background-color: red; */
   height: 1150px;
   /* width: 1200px; */
   background-repeat: no-repeat;
@@ -233,14 +238,49 @@ input {
   background-image: url("./assets/imgandIcons/backgroundimage2.png");
   height: 770px;
   width: 100%;
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
-  padding-top: 3rem;
-  margin: 0 auto;
 }
 
-.Banner2 > .mainHeader {
+.Banner3 {
+  background-image: url("./assets/imgandIcons/banner3Image.png");
+  background-size: cover;
+  height: 900px;
+  padding-bottom: 57px;
+}
+
+.Banner3 > .BlurContainer {
+  width: 100%;
+  max-width: 1660px;
+  /* background-color: red; */
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--sixth-color);
+  border-radius: 24px;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 1.5rem;
+}
+
+.Banner3 .BannerContent_aboutus {
+  color: var(--white-color);
+  width: 100%;
+  max-width: 535px;
+  margin-right: 8rem;
+  margin-top: 8rem;
+}
+
+.Banner3 .BannerContent_aboutus > h4 {
+  font-weight: 400;
+  font-size: 55px;
+  font-family: "Hudhund";
+}
+.Banner3 .BannerContent_aboutus > p {
+  font-weight: 400;
+  /* font-size: 55px; */
+  text-align: justify;
+}
+
+.Banner2 > .mainHeader,
+.Banner3 > .mainHeader {
   max-width: 1720px;
   margin-top: 1rem;
 }
@@ -345,7 +385,6 @@ input {
   flex-direction: column;
   justify-content: center;
   /* gap: 1rem; */
-  /* background-color: red; */
 }
 
 .SecondSecHeader > h3 {
@@ -475,7 +514,6 @@ input {
   border-bottom: 0.7px solid var(--primary-color);
   /* font-size: 1.2rem; */
   font-weight: 500;
-  /* background-color: red; */
   text-align: center;
 }
 
@@ -596,7 +634,6 @@ input {
 
 .HomeCoffeBoardTextContainer {
   max-width: 1200px;
-  /* background-color: red; */
   margin: 10rem auto 0;
 }
 
@@ -623,7 +660,6 @@ input {
 }
 
 .ForhSecContainer {
-  /* background-color: red; */
   width: 100%;
   max-width: 1300px;
   margin: 10rem auto 0;
@@ -665,6 +701,13 @@ input {
   margin-top: 14rem;
 }
 
+.FifthSecContainer.aboutus-page {
+  margin-top: 6rem;
+  justify-content: center;
+  gap: 4rem;
+
+}
+
 .FifthSecContainer > div:first-child > h4 {
   font-weight: 400;
   font-size: 50px;
@@ -690,8 +733,26 @@ input {
   backdrop-filter: blur(10px);
   color: var(--white-color);
 }
+.FifthSecContainer.aboutus-page > form > input {
+  background-color: #2b1d154a;
+  width: 350px;
+  font-weight: 300;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 0.8px solid var(--white-color);
+  backdrop-filter: blur(10px);
+  color: var(--white-color);
+}
+.FifthSecContainer.aboutus-page > form {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+}
+.FifthSecContainer.aboutus-page > form > button {
+ margin: 0;
+}
 
-.FifthSecContainer > form > div > input::placeholder {
+.FifthSecContainer > form > div > input::placeholder, .FifthSecContainer.aboutus-page > form > input::placeholder  {
   color: var(--white-color);
   font-weight: 100;
 }
@@ -887,10 +948,6 @@ footer .footerSvg1 {
   display: none;
 }
 
-/* .ListFilterDropDown > li > label > .uncheckImg {
-  display: inline;
-} */
-
 input[type="checkbox"] {
   margin-right: 10px;
   cursor: pointer;
@@ -898,4 +955,75 @@ input[type="checkbox"] {
 
 .ListFilterDropDown > li:not(:last-child) {
   border-bottom: 1px solid #e0e0e0;
+}
+
+.VitrinTeamSec {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.VitrinTeamSec > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.VitrinTeamSec > div:nth-of-type(1) > h4 {
+  font-weight: 400;
+  font-size: 50px;
+  font-family: "Hudhund";
+  color: var(--primary-color);
+}
+.VitrinTeamSec > div:nth-of-type(1) > p {
+  font-weight: 400;
+  /* font-size: 50px; */
+  color: var(--secondary-color);
+}
+.VitrinTeamSec > div:nth-of-type(1) > p {
+  font-weight: 400;
+  /* font-size: 50px; */
+  color: var(--secondary-color);
+}
+.VitrinTeamSec > div:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  gap: 10px;
+  padding: 0 1rem;
+}
+
+.TeamMemberCard {
+  background-color: var(--primary-color);
+  padding: 15px;
+  border: 1px solid var(--fourth-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 23px;
+  width: 201px;
+  margin: 0 auto;
+  box-shadow: 2px 4px 10px 0px #0000001a, 7px 16px 18px 0px #00000017,
+    15px 36px 24px 0px #0000000d, 27px 65px 28px 0px #00000003,
+    43px 101px 31px 0px #00000000;
+}
+
+.TeamMemberCard > div:nth-of-type(1) {
+  border-radius: 50%;
+}
+.TeamMemberCard > div:nth-of-type(2) > h6 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--fourth-color);
+}
+.TeamMemberCard > div:nth-of-type(2) > span {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--white-color);
 }
