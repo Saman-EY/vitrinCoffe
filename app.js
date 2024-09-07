@@ -1,4 +1,4 @@
-// mobile offcanvas
+///////// mobile offcanvas
 const openButton = document.querySelector("#OpenMobileOffcanvas"); // Your open button
 const closeButton = document.querySelector("#closeMobileOffcanvas"); // Close button inside off-canvas
 const overlay = document.querySelector(".offcanvasOverlay");
@@ -19,7 +19,7 @@ closeButton.addEventListener("click", closeOffcanvas);
 overlay.addEventListener("click", closeOffcanvas);
 // mobile offcanvas end
 
-// list filter
+//////// list filter
 // Select all dropdown buttons
 const dropdownButtons = document.querySelectorAll(".dropdownButton");
 
@@ -89,3 +89,44 @@ document.addEventListener("click", (e) => {
     }
   });
 });
+
+/////////////////// LIST FILTER END
+
+/////////////////////// ACCORDION
+const accordionHeaders = document.querySelectorAll(".AccordionHeader");
+
+// Open the first accordion on page load
+const firstAccordion = accordionHeaders[0].parentElement; // Get the first <section> element
+firstAccordion.classList.add("open"); // Add the 'open' class
+firstAccordion.querySelector(".openAccordion").style.display = "none"; // Hide open button
+firstAccordion.querySelector(".closeAccordion").style.display = "flex"; // Show close
+
+accordionHeaders.forEach((header) => {
+  header.addEventListener("click", function () {
+    const parentSection = header.parentElement; // Get the parent <section> element
+    const openBtn = parentSection.querySelector(".openAccordion"); // Select the open button
+    const closeBtn = parentSection.querySelector(".closeAccordion"); // Select the close button
+
+    parentSection.classList.toggle("open"); // Toggle the 'open' class
+
+    // Toggle visibility of buttons
+    if (parentSection.classList.contains("open")) {
+      openBtn.style.display = "none"; // Hide open button
+      closeBtn.style.display = "flex"; // Show close button
+    } else {
+      openBtn.style.display = "flex"; // Show open button
+      closeBtn.style.display = "none"; // Hide close button
+    }
+
+    // Close other accordions if needed (optional)
+    // document.querySelectorAll(".AccordionSec").forEach((section) => {
+    //   if (section !== parentSection) {
+    //     section.classList.remove("open");
+    //     section.querySelector(".openAccordion").style.display = "flex";
+    //     section.querySelector(".closeAccordion").style.display = "none";
+    //   }
+    // });
+  });
+});
+
+//// //ACCORDION END

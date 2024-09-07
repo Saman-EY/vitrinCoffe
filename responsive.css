@@ -118,6 +118,8 @@
     margin: auto;
     margin-top: 8rem;
   }
+
+  
 }
 @media (max-width: 860px) {
   .VitrinTeamSec > div:nth-of-type(2) {
@@ -168,6 +170,14 @@
   .CardsListContainer > .MiniCard {
     margin: 0 auto;
   }
+
+  .InformationSec {
+    flex-direction: column;
+  }
+
+  .InformationSec > div:nth-of-type(2) {
+    padding-top: 4rem;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -204,5 +214,13 @@
 @media (min-width: 1600px) and (max-width: 1800px) {
   .mainHeader {
     padding: 0 5rem;
+  }
+}
+@media (max-width: 1780px) {
+  .Banner4 {
+    background-image: url("./assets/imgandIcons/cup-with-coffee-beans.png");
+    background-size: cover;
+    /* height: 1200px; */
+    background-position: center top;
   }
 }
