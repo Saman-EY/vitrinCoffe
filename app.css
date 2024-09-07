@@ -899,7 +899,7 @@ footer > section > div:nth-of-type(3) > ul > li:first-child {
 
 footer .footerSvg2 {
   position: absolute;
-  top: -12px;
+  top: -30px;
   right: 0;
   z-index: -1;
 }
@@ -1265,6 +1265,80 @@ input[type="checkbox"] {
 .AccordionsContainer > section .closeAccordion {
   background-color: var(--primary-color);
   display: none;
+}
+
+.LoginSecion {
+  width: 100%;
+  max-width: 1820px;
+  display: flex;
+}
+
+.LoginSecion > div:nth-of-type(1) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 9rem;
+}
+.LoginSecion > div:nth-of-type(1) > section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 430px;
+  gap: 45px;
+}
+.LoginSecion > div:nth-of-type(1) > section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.LoginSecion > div:nth-of-type(1) > section > div img {
+  width: 210px;
+  height: 210px;
+}
+.LoginSecion > div:nth-of-type(1) > section > div h5 {
+  font-weight: 400;
+  font-size: 40px;
+  color: var(--primary-color);
+  font-family: "Hudhund";
+}
+.LoginSecion > div:nth-of-type(1) > section > div p {
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+
+.LoginSecion > div:nth-of-type(1) > section > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  gap: 40px;
+}
+.LoginSecion > div:nth-of-type(1) > section > form input {
+  border-bottom: 1px solid var(--primary-color);
+  width: 100%;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+.LoginSecion > div:nth-of-type(1) > section > form input::placeholder {
+  color: var(--primary-color);
+}
+.LoginSecion > div:nth-of-type(1) > section > form button {
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
+  width: 100%;
+  border-radius: 14px;
+  padding: 3px;
+}
+
+.LoginSecion > div:nth-of-type(2) {
+  flex: 1;
 }
 
 /*///////////////////////////// ROLLEBACKS */
