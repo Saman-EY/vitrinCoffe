@@ -28,6 +28,10 @@
   .VitrinTeamSec > div:nth-of-type(2) {
     gap: 2rem;
   }
+
+  .AccordionsContainer > section > div > span {
+    display: none !important;
+  }
 }
 @media (max-width: 590px) {
   .ThirdSecSecondBackdrop > section {
@@ -54,6 +58,26 @@
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+  }
+
+  .AccordionsContainer > section > div > span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 16px 0px #080f340f;
+  }
+
+  .AccordionsContainer > section > div > span > img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .AccordionSec.open .AccordionBody {
+    max-height: 800px;
+    transition: max-height 1s ease-out;
   }
 }
 @media (max-width: 680px) {
@@ -118,14 +142,16 @@
     margin: auto;
     margin-top: 8rem;
   }
-
-  
 }
 @media (max-width: 860px) {
   .VitrinTeamSec > div:nth-of-type(2) {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
     align-items: center;
+  }
+
+  .AccordionsContainer {
+    padding-left: 50px;
   }
 }
 @media (max-width: 1150px) {
