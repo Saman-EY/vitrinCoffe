@@ -1642,6 +1642,7 @@ input[type="checkbox"] {
   height: 54px;
   padding: 0 8px;
 }
+
 .ReserveSec > div > form div input{
   border-radius: 10px;
   height: 54px;
@@ -1650,6 +1651,11 @@ input[type="checkbox"] {
   color: var(--primary-color);
   width: 216px;
 }
+.ReserveSec > div > form div input::placeholder{
+  color: var(--primary-color);
+  padding-right: 1rem;
+}
+
 
 .ReserveSec > div > form textarea{
   height: 160px;
