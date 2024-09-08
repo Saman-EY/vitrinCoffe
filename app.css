@@ -229,7 +229,8 @@ textarea {
 .Banner,
 .Banner2,
 .Banner3,
-.Banner4 {
+.Banner4,
+.Banner5 {
   background-image: url("./assets/imgandIcons/mainBanner.svg");
   height: 1150px;
   /* width: 1200px; */
@@ -258,6 +259,22 @@ textarea {
   background-image: url("./assets/imgandIcons/cup-with-coffee-beans.png");
   height: 1200px;
   background-position: center top;
+}
+
+.Banner5 {
+  background-image: url("./assets/imgandIcons/banner5.png");
+  background-position: center top;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.Banner5 > .BlurContainer {
+  width: 100%;
+  max-width: 1660px;
+  border: 6px solid var(--sixth-color);
+  border-radius: 24px;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 1.5rem;
 }
 
 .Banner3 > .BlurContainer {
@@ -1341,4 +1358,79 @@ input[type="checkbox"] {
   flex: 1;
 }
 
+.Banner5Content {
+  width: fit-content;
+  padding: 4rem;
+  padding-right: 6rem;
+}
+
+.ReserveInfo {
+  width: 100%;
+  max-width: 600px;
+  color: var(--primary-color);
+  gap: 24px;
+}
+
+.ReserveInfoHeader {
+  border-bottom: 1px solid var(--primary-color);
+
+}
+.ReserveInfoHeader > p {
+  font-size: 1.8rem;
+}
+
+.ReserveInfoBody > section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.ReserveInfoBody > section > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ReserveInfoBody > section > div span {
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--fourth-color);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.ReserveInfoBody > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ReserveInfoBody > div span {
+  width: 100%;
+  max-width: 480px;
+  height: 120px;
+  display: flex;
+  color: var(--text-color);
+  background-color: var(--fourth-color);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.QrcodeSec {
+  width: 100%;
+}
+.QrcodeSec > p {
+  max-width: 210px;
+  text-align: justify;
+}
+
+
 /*///////////////////////////// ROLLEBACKS */
+
+

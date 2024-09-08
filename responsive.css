@@ -111,6 +111,27 @@
   .FifthSecContainer > div > p {
     font-size: 1rem !important;
   }
+
+  .ReserveInfoBody > section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .Banner5 > .BlurContainer {
+    padding-bottom: 10rem;
+  }
+
+  .Banner5Content {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 760px) {
+  .QrcodeSec > img {
+    max-width: 270px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 800px) {
   body {
@@ -147,13 +168,13 @@
     margin-top: 8rem;
   }
 
-
   .LoginSecion {
     flex-direction: column;
   }
 
-
-
+  .Banner5Content {
+    padding: 2rem;
+  }
 }
 @media (max-width: 860px) {
   .VitrinTeamSec > div:nth-of-type(2) {
@@ -284,5 +305,8 @@
     background-size: cover;
     /* height: 1200px; */
     background-position: center top;
+  }
+  .Banner5 {
+    background-size: cover;
   }
 }
