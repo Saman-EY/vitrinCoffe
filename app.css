@@ -1516,12 +1516,11 @@ input[type="checkbox"] {
 .MainCafeMenuContainer {
   width: 100%;
   max-width: 1400px;
-  height: 900px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   color: var(--primary-color);
 }
 
@@ -1615,7 +1614,6 @@ input[type="checkbox"] {
 .ReserveSec {
   width: 100%;
   max-width: 1200px;
-  height: 400px;
   margin: 0 auto;
   gap: 92px;
   margin-top: 9rem;

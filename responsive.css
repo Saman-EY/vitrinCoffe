@@ -134,6 +134,20 @@
   .Banner5Content {
     margin: 0 auto;
   }
+
+  .MenuTotalContainer > p,.MenuTotalContainer > span {
+    font-size: 1rem;
+  }
+
+  .MainCafeMenuContainer .MenuListsSec {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .SecondSecTabsContainer.menu-page > button {
+    font-size: 1rem;
+    width: 130px;
+    padding: 5px;
+  }
 }
 @media (max-width: 760px) {
   .QrcodeSec > img {
@@ -273,6 +287,22 @@
   .CafeShowcaseContainer {
     flex-direction: column-reverse;
   }
+
+  .ReserveSec {
+    flex-direction: column;
+  }
+
+  .ReserveSec > div > form div select{
+    width: 100%;
+  }
+  .ReserveSec > div > form div input{
+    width: 100%;
+  }
+
+  .ReserveSec > div > form  {
+    margin: 0 1rem;
+  }
+  
 }
 
 
