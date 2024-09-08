@@ -267,6 +267,14 @@ textarea {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+.Banner6 {
+  width: 100%;
+  max-width: 1730px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
 .Banner5 > .BlurContainer {
   width: 100%;
   max-width: 1660px;
@@ -1373,7 +1381,6 @@ input[type="checkbox"] {
 
 .ReserveInfoHeader {
   border-bottom: 1px solid var(--primary-color);
-
 }
 .ReserveInfoHeader > p {
   font-size: 1.8rem;
@@ -1430,7 +1437,239 @@ input[type="checkbox"] {
   text-align: justify;
 }
 
+.CafeShowcaseContainer {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  max-width: 1610px;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.CafeShowcaseContainer > section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.CafeShowcaseContainer .description h5 {
+  font-weight: 400;
+  font-size: 50px;
+  color: var(--primary-color);
+  font-family: "Hudhund";
+}
+.CafeShowcaseContainer .description > div p {
+  color: var(--secondary-color);
+  font-weight: 400;
+  text-align: justify;
+  width: 355px;
+  font-size: 1.1rem;
+}
+
+.CafeShowcaseContainer .features h5 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+.CafeShowcaseContainer .features ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+  color: var(--primary-color);
+}
+
+.CafeShowcaseContainer .features ul li {
+  font-size: 1rem;
+}
+
+.CafeShowcaseContainer .features ul li img {
+  width: 65px;
+  height: 70px;
+}
+
+.CafeSliderSliderContainer {
+  width: 100%;
+  max-width: 670px;
+  height: 760px;
+  padding: 0.6rem;
+  border-radius: 25px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='25' ry='25' stroke='%23333' stroke-width='5' stroke-dasharray='13' stroke-dashoffset='5' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 25px;
+}
+
+.MapSection {
+  width: 1122px;
+  height: 567px;
+  border: 1px solid var(--fourth-color);
+  background-color: var(--seventh-color);
+  margin: 0 auto;
+  margin-top: 7rem;
+  border-radius: 1rem;
+}
+
+.SecondSecTabsContainer.menu-page > button {
+  width: 190px;
+}
+
+.MainCafeMenuContainer {
+  width: 100%;
+  max-width: 1400px;
+  height: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--primary-color);
+}
+
+.MainCafeMenuContainer .MenuListsSec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.MainCafeMenuContainer .MenuListsSec > div {
+  background-color: #f4f1f0;
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+.MainCafeMenuContainer > .MenuListsSec > div .header {
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 0.8rem;
+}
+
+.MainCafeMenuContainer
+  > .MenuListsSec
+  > div
+  .content
+  > li
+  > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.MainCafeMenuContainer > .MenuListsSec > div .content > li .menuItemQty {
+  font-size: 0.8rem;
+}
+.MainCafeMenuContainer
+  > .MenuListsSec
+  > div
+  .content
+  > li
+  > div:nth-of-type(1)
+  .dashedDiv {
+  border-bottom: 2px dotted var(--primary-color);
+  flex: 1;
+}
+
+.MainCafeMenuContainer > .MenuListsSec > div .content > li .plusBtn,
+.MainCafeMenuContainer > .MenuListsSec > div .content > li .minusBtn {
+  background-color: var(--white-color);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid var(--primary-color);
+}
+.MainCafeMenuContainer > .MenuListsSec > div .content > li .plusBtn:hover,
+.MainCafeMenuContainer > .MenuListsSec > div .content > li .minusBtn:hover {
+  background-color: var(--seventh-color);
+}
+
+.MainCafeMenuContainer > .MenuListsSec > div .content > li .item-div {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  gap: 5px;
+}
+.MainCafeMenuContainer > .MenuListsSec > div .content > li .item-div > span {
+  font-size: 1rem;
+}
+
+.MainCafeMenuContainer > .MenuListsSec > div .content > li .price-div {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  width: 90px;
+  gap: 5px;
+}
+
+.MainCafeMenuContainer .MenuTotalContainer {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px;
+  gap: 40px;
+  border-radius: 14px;
+}
+.MainCafeMenuContainer .MenuTotalContainer > span {
+  background-color: var(--fourth-color);
+  border-radius: 9px;
+  padding: 15px 20px;
+}
+
+.ReserveSec {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  gap: 92px;
+  margin-top: 9rem;
+  padding-bottom: 10rem;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.ReserveSec > div > h5 {
+  font-weight: 400;
+  font-size: 45px;
+  font-family: "Hudhund";
+  color: var(--primary-color);
+}
+
+.ReserveSec > div > form div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ReserveSec > div > form div select{
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  width: 216px;
+  height: 54px;
+  padding: 0 8px;
+}
+.ReserveSec > div > form div input{
+  border-radius: 10px;
+  height: 54px;
+
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  width: 216px;
+}
+
+.ReserveSec > div > form textarea{
+  height: 160px;
+  width: 100%;
+  resize: none;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  padding: 5px 10px;
+}
+
+.ReserveSec > div > form button {
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 15px;
+}
+
 
 /*///////////////////////////// ROLLEBACKS */
-
-

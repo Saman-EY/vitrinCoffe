@@ -83,6 +83,14 @@
   .LoginSecion {
     margin-bottom: 8rem;
   }
+
+  .CafeShowcaseContainer > section:nth-of-type(1) {
+    width: 100%;
+  }
+
+  .CafeShowcaseContainer .features ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 680px) {
   .SecondSecPaginateContainer > div:nth-child(2) {
@@ -261,7 +269,12 @@
   .LoginSecion > div:nth-of-type(1) > section > form button {
     font-size: 1rem;
   }
+
+  .CafeShowcaseContainer {
+    flex-direction: column-reverse;
+  }
 }
+
 
 @media (min-width: 1150px) {
   .mobileHeader {
@@ -269,6 +282,12 @@
   }
   .mainHeader {
     display: flex;
+  }
+}
+
+@media (max-width: 1250px) {
+  .MainCafeMenuContainer {
+    flex-direction: column;
   }
 }
 
