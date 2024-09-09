@@ -18,7 +18,6 @@
   .CafeSliderSliderContainer {
     height: 480px !important;
   }
-  
 }
 @media (max-width: 480px) {
   .ListFiltersContainer {
@@ -35,6 +34,11 @@
 
   .AccordionsContainer > section > div > span {
     display: none !important;
+  }
+
+  .ReserveSec > img {
+    width: 100%;
+    max-width: 500px;
   }
 }
 @media (max-width: 590px) {
@@ -143,7 +147,8 @@
     margin: 0 auto;
   }
 
-  .MenuTotalContainer > p,.MenuTotalContainer > span {
+  .MenuTotalContainer > p,
+  .MenuTotalContainer > span {
     font-size: 1rem;
   }
 
@@ -164,13 +169,10 @@
   }
 }
 @media (max-width: 800px) {
-  body {
-    overflow-x: hidden;
-  }
+  
 
   .bannerOptionsSecContainer {
     padding-right: 0;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
   }
@@ -215,6 +217,12 @@
 
   .AccordionsContainer {
     padding-left: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .CafeSliderSliderContainer > .bottomDownSvg {
+    display: none;
   }
 }
 @media (max-width: 1150px) {
@@ -300,25 +308,21 @@
     flex-direction: column;
   }
 
-  .ReserveSec > div > form div select{
+  .ReserveSec > div > form div select {
     width: 100%;
   }
-  .ReserveSec > div > form div input{
+  .ReserveSec > div > form div input {
     width: 100%;
   }
 
-  .ReserveSec > div > form  {
+  .ReserveSec > div > form {
     margin: 0 1rem;
   }
-  
 
   .ReserveSec > div > form .secondDiv {
     width: 100%;
   }
-  
-
 }
-
 
 @media (min-width: 1150px) {
   .mobileHeader {
@@ -350,6 +354,10 @@
     height: 700px;
     display: flex;
     align-items: end;
+  }
+
+  .CafeSliderSliderContainer > .bottomDownSvg {
+    left: -50px;
   }
 }
 @media (max-width: 1600px) {
