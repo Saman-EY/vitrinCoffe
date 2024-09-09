@@ -15,6 +15,10 @@
   .ForhSecContainer > section:first-child > img {
     max-width: 400px;
   }
+  .CafeSliderSliderContainer {
+    height: 480px !important;
+  }
+  
 }
 @media (max-width: 480px) {
   .ListFiltersContainer {
@@ -90,6 +94,10 @@
 
   .CafeShowcaseContainer .features ul {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .CafeSliderSliderContainer {
+    height: 580px;
   }
 }
 @media (max-width: 680px) {
@@ -358,7 +366,6 @@
   .Banner4 {
     background-image: url("./assets/imgandIcons/cup-with-coffee-beans.png");
     background-size: cover;
-    /* height: 1200px; */
     background-position: center top;
   }
   .Banner5 {

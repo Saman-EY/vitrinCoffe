@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
-
     <link rel="stylesheet" href="./dist/jalalidatepicker.css" />
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./assets/swiper/swiper.css" />
+
     <link rel="stylesheet" href="./app.css" />
     <link rel="stylesheet" href="./responsive.css" />
     <title>Vitrin Coffe</title>
@@ -185,10 +187,57 @@
 
         <!-- slider -->
         <section class="CafeSliderSliderContainer">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/imgandIcons/slide-image1.png"
+                  alt="slide-imge"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/imgandIcons/slide-image2.png"
+                  alt="slide-imge"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/imgandIcons/slide-image3.png"
+                  alt="slide-imge"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/imgandIcons/slide-image4.png"
+                  alt="slide-imge"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-100 h-100"
+                  src="./assets/imgandIcons/slide-image5.png"
+                  alt="slide-imge"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+          <!-- bottom svg -->
           <img
-            class="w-100 h-100"
-            src="./assets/imgandIcons/slide-image1.png"
-            alt="slide-imge"
+            class="bottomDownSvg"
+            src="./assets/imgandIcons/slider-bootom-down-svg.svg"
+            alt="svg"
           />
         </section>
       </section>
@@ -1375,6 +1424,8 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/bootstrap.esm.js"></script>
     <script src="./dist/jalalidatepicker.min.js"></script>
+    <script src="./assets/swiper/swiper-effect-utils.mjs"></script>
+    <script src="./assets/swiper/swiper-bundle.js"></script>
     <script src="./app.js"></script>
     <script src="./app2.js"></script>
     <script></script>
