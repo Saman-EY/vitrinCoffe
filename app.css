@@ -1500,14 +1500,39 @@ input[type="checkbox"] {
 }
 
 .MapSection {
-  width: 1122px;
+  width: 100%;
+  max-width: 1122px;
   height: 567px;
   border: 1px solid var(--fourth-color);
-  background-color: var(--seventh-color);
   margin: 0 auto;
   margin-top: 7rem;
   border-radius: 1rem;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
 }
+.MapSection > div {
+  width: 253px;
+  height: 283px;
+  background-color: var(--white-color);
+  border: 1px solid var(--fourth-color);
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: var(--primary-color);
+  position: absolute;
+  top: 20%;
+  right: 30px;
+}
+
+.MapSection > div > h5 {
+  font-weight: 400;
+  border-bottom: 1px solid var(--fourth-color);
+  padding-bottom: 1rem;
+  font-family: "Hudhund";
+}
+
 
 .SecondSecTabsContainer.menu-page > button {
   width: 190px;
@@ -1551,7 +1576,7 @@ input[type="checkbox"] {
   gap: 5px;
 }
 .MainCafeMenuContainer > .MenuListsSec > div .content > li .menuItemQty {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .MainCafeMenuContainer
   > .MenuListsSec
@@ -1676,4 +1701,12 @@ input[type="checkbox"] {
 }
 
 
+
+jdp-container .jdp-month select {
+  font-size: .9rem;
+}
+
+jdp-container .jdp-year select {
+  font-size: .9rem;
+}
 /*///////////////////////////// ROLLEBACKS */

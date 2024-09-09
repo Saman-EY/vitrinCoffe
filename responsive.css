@@ -303,6 +303,12 @@
     margin: 0 1rem;
   }
   
+
+  .ReserveSec > div > form .secondDiv {
+    width: 100%;
+  }
+  
+
 }
 
 

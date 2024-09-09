@@ -109,8 +109,7 @@ jdp-container .jdp-year, jdp-container .jdp-year input, jdp-container .jdp-year 
   padding: 0;
   margin: 0;
   display: inline-block;
-  font-size: inherit;
-  font-family: inherit;
+  font-family: 'Courier New', Courier, monospace;
   vertical-align: initial;
   font-weight: 300;
   color: inherit;
